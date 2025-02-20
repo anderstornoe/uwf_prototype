@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWF Repair Steps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Uptower Repair</h1>
+            <!-- Dropdowns for Turbine and Repair Kit Selection -->
+            <div class="dropdown-container">
+                <select id="turbine-select">
+                    <option value="v80_90">V80/90 1.8-2.0MW</option>
+                    <option value="v160">V160 1.8-2.0MW</option>
+                </select>
+                <select id="repair-kit-select">
+                    <option value="5271802H">5271802H</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="steps-container">
+        <div class="steps-navigation">
+            <h4>Repair Steps:</h4> 
+            <button class="step-btn" data-step="1">1. Preparation</button>
+            <button class="step-btn" data-step="2">2. Gland Removal</button>
+            <button class="step-btn" data-step="3">3. Inspection</button>
+            <button class="step-btn" data-step="4">4. Installation</button>
+            <button class="step-btn" data-step="5">5. Testing</button>
+        </div>
+        
+        <div class="step-content">
+            <h2 id="step-title">Step 1: Preparation</h2>
+            <!-- Image Placeholder for Step -->
+            <img id="step-image" src="img/img_1.jpg" alt="Step 1 Image" class="step-image">
+            <p id="step-description">Demount the positioning sensor and mount the drain hose.<br><br>On the rod, measure the length of the protruding thread or count the shims, depending on the type of link bearing head. Detach using the special tools accordingly.</p>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="footer-nav">
+            <button class="footer-btn" id="steps-btn">
+                <i class="icon">🛠️</i> Steps
+            </button>
+            <button class="footer-btn" id="tools-btn">
+                <i class="icon">🔧</i> Tools
+            </button>
+            <button class="footer-btn">
+                <i class="icon">🤖</i> AI Help
+            </button>
+            <button class="footer-btn">
+                <i class="icon">📄</i> Docs
+            </button>
+            <button class="footer-btn active" id="feedback-btn">
+                <i class="icon">📢</i> Feedback
+            </button>
+        </nav>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

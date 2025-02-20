@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWF Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Uptower Repair - Feedback</h1>
+        </div>
+    </header>
+
+    <div class="feedback-container">
+        <h2>Your Feedback</h2>
+        <p>We value your feedback! Please rate the following:</p>
+
+        <form id="feedback-form">
+            <label for="quality">Quality of your repair:</label>
+            <input type="range" id="quality" name="quality" min="1" max="5" value="3">
+            
+            <label for="efficiency">Efficiency and time spent on repair:</label>
+            <input type="range" id="efficiency" name="efficiency" min="1" max="5" value="3">
+            
+            <label for="tool-kit">Tool kit usefulness:</label>
+            <input type="range" id="tool-kit" name="tool-kit" min="1" max="5" value="3">
+            
+            <label for="overall-app">Overall app helpfulness:</label>
+            <input type="range" id="overall-app" name="overall-app" min="1" max="5" value="3">
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <footer>
+        <nav class="footer-nav">
+            <button class="footer-btn" id="steps-btn">
+                <i class="icon">🛠️</i> Steps
+            </button>
+            <button class="footer-btn" id="tools-btn">
+                <i class="icon">🔧</i> Tools
+            </button>
+            <button class="footer-btn">
+                <i class="icon">🤖</i> AI Help
+            </button>
+            <button class="footer-btn">
+                <i class="icon">📄</i> Docs
+            </button>
+            <button class="footer-btn active" id="feedback-btn">
+                <i class="icon">📢</i> Feedback
+            </button>
+        </nav>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

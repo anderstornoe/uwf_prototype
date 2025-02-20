@@ -1,0 +1,243 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #9E1B32; /* Red color to match header */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.h4{
+    padding-top: 4px;
+}
+
+.header-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.dropdown-container {
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+label {
+    font-size: 14px;
+    margin-right: 0px;
+}
+
+select {
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 70px; /* Adjust for footer space */
+}
+
+.step-content {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.step-content h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.step-content p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.step-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.step-btn {
+    background-color: #fff;
+    border: 0px solid #333;
+    border-radius: 2px;
+    padding: 7px 0px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #9e1b33;
+    transition: background-color 0.3s;
+    width: 120px;
+    text-align: center;
+}
+
+.step-btn:hover {
+    background-color: #9E1B32;
+    color: white;
+}
+
+.step-btn.active {
+    background-color: #9E1B32;
+    color: white;
+}
+
+footer {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-btn {
+    background-color: #fff;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Additional styling for the tools page */
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 70px; /* Adjust for footer space */
+}
+
+.tools-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tool-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.tools-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.feedback-container {
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback-container input[type="range"] {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.feedback-container button {
+    background-color: #9E1B32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-container button:hover {
+    background-color: #007BFF;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-btn {
+    background-color: #fff;
+    border: 2px solid #9E1B32; /* Red border */
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-weight: bold;
+    color: #9E1B32;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #9E1B32;
+    color: white;
+}
+
+.footer-btn.active {
+    background-color: #9E1B32;
+    color: white;
+}
+
