@@ -10,27 +10,37 @@
 
     <header>
         <div class="header-content">
-            <h1>Uptower Repair - Feedback</h1>
+            <h1>Uptower Repair</h1>
+            <!-- Dropdowns for Turbine and Repair Kit Selection -->
+            <div class="dropdown-container">
+                <select id="turbine-select">
+                    <option value="v80_90">V80/90 1.8-2.0MW</option>
+                    <option value="v160">V160 1.8-2.0MW</option>
+                </select>
+                <select id="repair-kit-select">
+                    <option value="5271802H">5271802H</option>
+                </select>
+            </div>
         </div>
     </header>
 
-    <div class="feedback-container">
+<div class="feedback-container">
         <h2>Your Feedback</h2>
         <p>We value your feedback! Please rate the following:</p>
 
         <form id="feedback-form">
             <label for="quality">Quality of your repair:</label>
             <input type="range" id="quality" name="quality" min="1" max="5" value="3">
-            
+
             <label for="efficiency">Efficiency and time spent on repair:</label>
             <input type="range" id="efficiency" name="efficiency" min="1" max="5" value="3">
-            
+
             <label for="tool-kit">Tool kit usefulness:</label>
             <input type="range" id="tool-kit" name="tool-kit" min="1" max="5" value="3">
-            
+
             <label for="overall-app">Overall app helpfulness:</label>
             <input type="range" id="overall-app" name="overall-app" min="1" max="5" value="3">
-            
+
             <label for="comments">Additional Comments:</label>
             <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
 
@@ -38,7 +48,7 @@
         </form>
     </div>
 
-    <footer>
+      <footer>
         <nav class="footer-nav">
             <button class="footer-btn" id="steps-btn">
                 <i class="icon">🛠️</i> Steps
@@ -46,7 +56,10 @@
             <button class="footer-btn" id="tools-btn">
                 <i class="icon">🔧</i> Tools
             </button>
-            <button class="footer-btn">
+            <button class="footer-btn" id="online-help-btn">
+                <i class="icon">💡</i> Online Help
+            </button>
+            <button class="footer-btn" id="ai-help-btn">
                 <i class="icon">🤖</i> AI Help
             </button>
             <button class="footer-btn">

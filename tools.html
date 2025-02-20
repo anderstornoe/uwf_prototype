@@ -10,26 +10,161 @@
 
     <header>
         <div class="header-content">
-            <h1>Uptower Repair - Tools</h1>
+            <h1>Uptower Repair</h1>
+            <!-- Dropdowns for Turbine and Repair Kit Selection -->
+            <div class="dropdown-container">
+                <select id="turbine-select">
+                    <option value="v80_90">V80/90 1.8-2.0MW</option>
+                    <option value="v160">V160 1.8-2.0MW</option>
+                </select>
+                <select id="repair-kit-select">
+                    <option value="5271802H">5271802H</option>
+                </select>
+            </div>
         </div>
     </header>
 
     <div class="tools-container">
         <h2>Tools Checklist</h2>
-        <ul class="tools-list">
-            <li><img src="img/tools/v80/img18.jpg" alt="Chain Block" class="tool-image"> Chain Block</li>
-            <li><img src="img/tools/v80/img19.jpg" alt="Flat Head Screwdriver" class="tool-image"> Flat Head Screwdriver</li>
-            <li><img src="img/tools/v80/img20.jpg" alt="Lifting Eye" class="tool-image"> Lifting Eye</li>
-            <li><img src="img/tools/v80/img21.jpg" alt="Measuring Tool" class="tool-image"> Measuring Tool</li>
-            <li><img src="img/tools/v80/img22.jpg" alt="Plastic Container" class="tool-image"> Plastic Container</li>
-            <li><img src="img/tools/v80/img23.jpg" alt="Cleaning Paper" class="tool-image"> Cleaning Paper</li>
-            <li><img src="img/tools/v80/img24.jpg" alt="Nitril Gloves" class="tool-image"> Nitril Gloves</li>
-            <li><img src="img/tools/v80/img25.jpg" alt="Torque Wrench" class="tool-image"> Torque Wrench</li>
-            <li><img src="img/tools/v80/img26.jpg" alt="Hydraulic Oil" class="tool-image"> Hydraulic Oil</li>
-        </ul>
+        <div class="tools-grid">
+            <!-- Tool List Items with descriptions -->
+            <div class="tool-item">
+                <img src="img/tools/v80/img18.jpg" alt="Chain Block" class="tool-image">
+                <div>Chain Block (3 pcs)</div>
+                <p class="tool-description">Used for lifting and securing heavy components during the repair process.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img19.jpg" alt="Flat Head Screwdriver" class="tool-image">
+                <div>Flat Head Screwdriver and Dentist Tool</div>
+                <p class="tool-description">Used for removal of gaskets and small components within tight spaces.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img21.jpg" alt="Lifting Eye" class="tool-image">
+                <div>Lifting Eye for Blade Rod Struts</div>
+                <p class="tool-description">Lifting point when working on cylinder components such as blade rod struts.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img22.jpg" alt="Measuring Tool" class="tool-image">
+                <div>Measuring Tool</div>
+                <p class="tool-description">Used before and after mounting the piston to ensure correct positioning.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img23.jpg" alt="Plastic Container" class="tool-image">
+                <div>Plastic Container (max height 20 cm)</div>
+                <p class="tool-description">Used to collect and store parts or fluids during the repair process.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img24.jpg" alt="Cleaning Paper" class="tool-image">
+                <div>Cleaning Paper/Towels/Mats</div>
+                <p class="tool-description">For cleaning components and surfaces during the repair process.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img33.jpg" alt="Plastic Bag for Trash" class="tool-image">
+                <div>Plastic Bag for Dirty Towels/Paper or Trash</div>
+                <p class="tool-description">For safely storing used towels, papers, and other waste materials.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img34.jpg" alt="Nitril Gloves" class="tool-image">
+                <div>Nitril and/or Rubber Gloves</div>
+                <p class="tool-description">To protect hands from contaminants and to maintain a clean working environment.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img36.jpg" alt="Torque Wrench 1000 NM" class="tool-image">
+                <div>Torque Wrench 1” 1000 NM</div>
+                <p class="tool-description">For tightening critical components to the correct torque specification.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img37.jpg" alt="46 mm Moment Key" class="tool-image">
+                <div>46 mm Moment Key</div>
+                <p class="tool-description">Used for adjusting the position sensor in specific wind turbine models.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img40.jpg" alt="Ratchet Set" class="tool-image">
+                <div>Ratchet Set</div>
+                <p class="tool-description">A set of ratchets used for loosening and tightening bolts with ease.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img41.jpg" alt="Allen Key" class="tool-image">
+                <div>Allen Key</div>
+                <p class="tool-description">For driving hexagonal screws and bolts used in the system.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img42.jpg" alt="Hammer" class="tool-image">
+                <div>Hammer (1-2.5 Kg)</div>
+                <p class="tool-description">Used to tap components into place and dislodge stuck parts.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img43.jpg" alt="Spanner Set" class="tool-image">
+                <div>1 Set of Spanners</div>
+                <p class="tool-description">Various sizes for adjusting and loosening different bolts and nuts.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img44.jpg" alt="Power Tool" class="tool-image">
+                <div>Power Tool (Nice to have)</div>
+                <p class="tool-description">For faster and easier removal of stuck bolts and other tasks.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+         
+            <div class="tool-item">
+                <img src="img/tools/v80/img45.jpg" alt="20-liter Jug" class="tool-image">
+                <div>20-liter Jug (empty)</div>
+                <p class="tool-description">Used for collecting oil during cylinder compression.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img53.jpg" alt="Chisels Flat" class="tool-image">
+                <div>Chisels Flat (2 pcs)</div>
+                <p class="tool-description">Used for loosening the link bearing head and unscrewing the piston rod.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img36.jpg" alt="Hydraulic Oil" class="tool-image">
+                <div>Hydraulic Oil</div>
+                <p class="tool-description">To lubricate the seals and prevent damage during the repair process.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img37.jpg" alt="Grease" class="tool-image">
+                <div>Grease</div>
+                <p class="tool-description">Used to grease threads and other moving parts to reduce friction.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img38.jpg" alt="Hacksaw" class="tool-image">
+                <div>Hacksaw (Nice to have)</div>
+                <p class="tool-description">Used for cutting through tough or jammed components.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img54.jpg" alt="File" class="tool-image">
+                <div>File (Thread and Flat)</div>
+                <p class="tool-description">Used to smooth and clean threads and flat surfaces.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+            <div class="tool-item">
+                <img src="img/tools/v80/img57.jpg" alt="Torque Multiplying Ratchet" class="tool-image">
+                <div>Torque Multiplying Ratchet</div>
+                <p class="tool-description">A highly recommended tool for applying high torque in limited spaces.</p>
+                <input type="checkbox" class="tool-checkbox">
+            </div>
+        </div>
     </div>
 
-    <footer>
+      <footer>
         <nav class="footer-nav">
             <button class="footer-btn" id="steps-btn">
                 <i class="icon">🛠️</i> Steps
@@ -37,13 +172,16 @@
             <button class="footer-btn" id="tools-btn">
                 <i class="icon">🔧</i> Tools
             </button>
-            <button class="footer-btn">
+            <button class="footer-btn" id="online-help-btn">
+                <i class="icon">💡</i> Online Help
+            </button>
+            <button class="footer-btn" id="ai-help-btn">
                 <i class="icon">🤖</i> AI Help
             </button>
             <button class="footer-btn">
                 <i class="icon">📄</i> Docs
             </button>
-            <button class="footer-btn" id="feedback-btn">
+            <button class="footer-btn active" id="feedback-btn">
                 <i class="icon">📢</i> Feedback
             </button>
         </nav>

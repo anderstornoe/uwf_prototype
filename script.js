@@ -10,16 +10,30 @@ $(document).ready(function() {
 
     // Click event for tools button
     $("#tools-btn").click(function() {
-        showToolsPage();
+        window.location.href = "tools.html"; // Navigate to tools page
     });
 
     // Click event for feedback button
     $("#feedback-btn").click(function() {
-        showFeedbackPage();
+        window.location.href = "feedback.html"; // Navigate to feedback page
     });
 
-       $("#steps-btn").click(function() {
-        showStepsPage();
+    // Click event for steps button
+    $("#steps-btn").click(function() {
+        window.location.href = "index.html"; // Navigate to steps page
+    });
+
+    $("#ai-help-btn").click(function() {
+        alert("navigating to chatgpt..");
+        //window.location.href = "https://chatgpt.com/g/g-67b703fe6d0c8191aa32f4bfc3cd9c90-ai-help-for-v80-90-18-20mw-repair-kit-5271802h"; // Navigate to steps page
+    window.open('https://chatgpt.com/g/g-67b703fe6d0c8191aa32f4bfc3cd9c90-ai-help-for-v80-90-18-20mw-repair-kit-5271802h', '_blank');
+    });
+
+    
+
+    // Click event for online help button
+    $("#online-help-btn").click(function() {
+        alert("Online Help is currently unavailable!"); // Placeholder for online help
     });
 
     // Function to display the selected step
@@ -58,19 +72,5 @@ $(document).ready(function() {
         $("#step-title").html(stepTitle);
         $("#step-description").html(stepDescription);
         $("#step-image").attr("src", imageSrc);
-    }
-
-    // Function to show the Tools page
-    function showToolsPage() {
-        window.location.href = "tools.html"; // Navigate to tools page
-    }
-
-    // Function to show the Feedback page
-    function showFeedbackPage() {
-        window.location.href = "feedback.html"; // Navigate to feedback page
-    }
-
-       function showStepsPage() {
-        window.location.href = "index.html"; // Navigate to feedback page
     }
 });

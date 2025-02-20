@@ -10,6 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styling */
 header {
     background-color: #9E1B32; /* Red color to match header */
     color: white;
@@ -17,15 +18,12 @@ header {
     text-align: center;
 }
 
-.h4{
-    padding-top: 4px;
-}
-
-.header-content h1 {
+header .header-content h1 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
+/* Dropdown Container Styling */
 .dropdown-container {
     margin-top: 10px;
     margin-left: 4px;
@@ -44,6 +42,7 @@ select {
     border: 1px solid #ccc;
 }
 
+/* Steps Content Container */
 .steps-container {
     display: flex;
     flex-direction: column;
@@ -52,6 +51,7 @@ select {
     padding-bottom: 70px; /* Adjust for footer space */
 }
 
+/* Step Content Styling */
 .step-content {
     background-color: white;
     padding: 20px;
@@ -75,6 +75,7 @@ select {
     margin-top: 20px;
 }
 
+/* Step Image Styling */
 .step-image {
     width: 100%;
     max-width: 600px;
@@ -87,6 +88,7 @@ select {
     margin-right: auto;
 }
 
+/* Steps Navigation Styling */
 .steps-navigation {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +97,7 @@ select {
     margin-bottom: 20px;
 }
 
+/* Step Button Styling */
 .step-btn {
     background-color: #fff;
     border: 0px solid #333;
@@ -118,6 +121,7 @@ select {
     color: white;
 }
 
+/* Footer Styling */
 footer {
     background-color: #fff;
     position: fixed;
@@ -128,57 +132,131 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Navigation Styling */
 .footer-nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
+/* Footer Button Styling */
 .footer-btn {
     background-color: #fff;
-    border: 2px solid #007BFF;
+    border: 2px solid #9E1B32; /* Red border */
     border-radius: 5px;
     padding: 12px 20px;
     font-weight: bold;
-    color: #007BFF;
+    color: #9E1B32;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.footer-btn:hover {
-    background-color: #007BFF;
-    color: white;
-}
-
-/* Additional styling for the tools page */
-.tools-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    padding-bottom: 70px; /* Adjust for footer space */
+    justify-content: center;
+    width: 100px; /* Make buttons smaller for mobile */
 }
 
-.tools-list {
-    list-style-type: none;
-    padding: 0;
+.footer-btn .icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Button icon on top of text for small screens */
+@media screen and (max-width: 600px) {
+    .footer-btn {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+/* Tools Container Styling */
+.tools-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 4px;  /* Similar to the steps container margin */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tools Grid */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid size for mobile */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
 }
 
 .tool-image {
-    width: 80px;
-    height: 80px;
+    width: 60px; /* Smaller image */
+    height: 60px;
     margin-right: 10px;
     border-radius: 4px;
 }
 
-.tools-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #555;
+/* Tool Description Styling */
+.tool-description {
+    font-size: 12px;  /* Smaller description text */
+    color: #777; /* Light grey for descriptions */
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
+/* Checkmark Styling */
+.tool-checkbox {
+    margin-left: 10px;
+    width: 30px;  /* Larger checkbox */
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #ccc; /* Grey border when unchecked */
+}
+
+/* Default unchecked grey style */
+.tool-checkbox:checked {
+    background-color: #9E1B32; /* Red when checked */
+    border: 2px solid #9E1B32;
+}
+
+/* Checkbox Hover and Focus Effect */
+.tool-checkbox:hover {
+    background-color: #007BFF; /* Blue on hover */
+    border-color: #007BFF;
+}
+
+/* Checkbox when disabled or unchecked */
+.tool-checkbox:disabled {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+/* Ensure that the layout works well on small screens */
+@media screen and (max-width: 600px) {
+    .tool-item {
+        padding: 12px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-btn {
+        font-size: 12px; /* Smaller font for mobile screens */
+    }
+}
+
+/* Feedback Page Styling */
 .feedback-container {
     padding: 20px;
     width: 80%;
@@ -189,17 +267,49 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.feedback-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feedback-container p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.feedback-container label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.feedback-container input[type="range"] {
+    width: 100%;
+    height: 15px; /* Make the slider thicker */
+    -webkit-appearance: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.feedback-container input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #9E1B32;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .feedback-container textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
-}
-
-.feedback-container input[type="range"] {
-    width: 100%;
-    margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .feedback-container button {
@@ -208,36 +318,9 @@ footer {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .feedback-container button:hover {
     background-color: #007BFF;
 }
-
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-btn {
-    background-color: #fff;
-    border: 2px solid #9E1B32; /* Red border */
-    border-radius: 5px;
-    padding: 12px 20px;
-    font-weight: bold;
-    color: #9E1B32;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.footer-btn:hover {
-    background-color: #9E1B32;
-    color: white;
-}
-
-.footer-btn.active {
-    background-color: #9E1B32;
-    color: white;
-}
-
