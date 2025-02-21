@@ -18,9 +18,34 @@ header {
     text-align: center;
 }
 
-header .header-content h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Align to the left */
+    padding: 0px;
+    background-color: #9E1B32; /* Optional: change background color */
+    color: white;
+}
+
+.logo {
+    width: 200px; /* Adjust the size of the logo */
+    height: auto;
+    margin-left: 15px; /* Space between logo and title */
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.logo_top{
+    height: 100px;
+    width: 100px;
 }
 
 /* Dropdown Container Styling */
@@ -41,6 +66,8 @@ select {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+
 
 /* Steps Content Container */
 .steps-container {
@@ -69,7 +96,7 @@ select {
 .step-content {
     background-color: white;
     padding: 20px;
-    width: 80%;
+    width: 97%;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -191,7 +218,7 @@ footer {
     margin: 4px;  /* Similar to the steps container margin */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 97%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -370,8 +397,7 @@ footer {
 
 /* Style for Info Button */
 .info-btn {
-    background-color: white;
-    color: white;
+    background-color: rgba(255,255,255,.7);
     border: 0px solid;
     padding: 3px;
     border-radius: 50%;
@@ -390,7 +416,7 @@ footer {
 /* Feedback Page Styling */
 .feedback-container {
     padding: 20px;
-    width: 80%;
+    width: 97%;
     max-width: 800px;
     margin: 0 auto;
     background-color: white;

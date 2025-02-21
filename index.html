@@ -9,10 +9,16 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>Uptower Repair</h1>
-            <!-- Dropdowns for Turbine and Repair Kit Selection -->
+            <div class="header-container">
+            <!-- Logo Image -->
+            
+            <!-- Title -->
+            <h1>Uptower Repair - Steps</h1>
+        <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="Logo" class="logo">
+        </div>            <!-- Dropdowns for Turbine and Repair Kit Selection -->
             <div class="dropdown-container">
-                <select id="turbine-select">
+                Select turbine and repair kit: 
+                <select id="turbine-select"> 
                     <option value="v80_90">V80/90 1.8-2.0MW</option>
                     <option value="v160">V160 1.8-2.0MW</option>
                 </select>
@@ -41,27 +47,29 @@
     </div>
 
     <footer>
+        <footer>
         <nav class="footer-nav">
             <button class="footer-btn" id="steps-btn">
-                <i class="icon">🛠️</i> Steps
+                <p class="icon">🛠️</p> Steps
             </button>
             <button class="footer-btn" id="tools-btn">
-                <i class="icon">🔧</i> Tools
+                <p class="icon">🔧</p> Tools
             </button>
             <button class="footer-btn" id="online-help-btn">
-                <i class="icon">💡</i> Online Help
+                <p class="icon">💡</p> Online Help
             </button>
             <button class="footer-btn" id="ai-help-btn">
-                <i class="icon">🤖</i> AI Help
+                <p class="icon">🤖</p> AI Help
             </button>
             <button class="footer-btn">
-                <i class="icon">📄</i> Docs
+                <p class="icon">📄</p> Docs
             </button>
             <button class="footer-btn active" id="feedback-btn">
-                <i class="icon">📢</i> Feedback
+                <p class="icon">📢</p> Feedback
             </button>
         </nav>
     </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
