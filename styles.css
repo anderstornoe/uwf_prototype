@@ -26,21 +26,22 @@ header {
     padding: 0px;
     background-color: #9E1B32; /* Optional: change background color */
     color: white;
+    margin-bottom: 40px;
 }
 
 .logo {
-    width: 200px; /* Adjust the size of the logo */
+    width: 24%; /* Adjust the size of the logo */
     height: auto;
     margin-left: 15px; /* Space between logo and title */
     position: absolute;
     right: 5px;
-    top: 3px;
+    top: 7px;
 }
 
 h1 {
     font-size: 24px;
     font-weight: bold;
-    margin: 0; /* Remove default margin */
+    margin-left: 0; /* Remove default margin */
 }
 
 .logo_top{
