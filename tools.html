@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UWF Tools</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
     <header>
         <div class="header-content">
             <h1>Uptower Repair</h1>
@@ -23,148 +24,174 @@
             </div>
         </div>
     </header>
-
     <div class="tools-container">
         <h2>Tools Checklist</h2>
         <div class="tools-grid">
-            <!-- Tool List Items with descriptions -->
+            <!-- Tool List Items with clickable descriptions -->
             <div class="tool-item">
                 <img src="img/tools/v80/img18.jpg" alt="Chain Block" class="tool-image">
                 <div>Chain Block (3 pcs)</div>
-                <p class="tool-description">Used for lifting and securing heavy components during the repair process.</p>
+                <button class="info-btn" onclick="showDescription('Chain Block', 'This is used for lifting and securing heavy components during the repair process.')">❓</button>
+                <div class="tool-description" id="desc-Chain Block"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img19.jpg" alt="Flat Head Screwdriver" class="tool-image">
                 <div>Flat Head Screwdriver and Dentist Tool</div>
-                <p class="tool-description">Used for removal of gaskets and small components within tight spaces.</p>
+                <button class="info-btn" onclick="showDescription('Flat Head Screwdriver', 'Used for removal of gaskets and small components within tight spaces.')">❓</button>
+                <div class="tool-description" id="desc-Flat Head Screwdriver"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img21.jpg" alt="Lifting Eye" class="tool-image">
                 <div>Lifting Eye for Blade Rod Struts</div>
-                <p class="tool-description">Lifting point when working on cylinder components such as blade rod struts.</p>
+                <button class="info-btn" onclick="showDescription('Lifting Eye', 'Lifting point when working on cylinder components such as blade rod struts.')">❓</button>
+                <div class="tool-description" id="desc-Lifting Eye"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img22.jpg" alt="Measuring Tool" class="tool-image">
                 <div>Measuring Tool</div>
-                <p class="tool-description">Used before and after mounting the piston to ensure correct positioning.</p>
+                <button class="info-btn" onclick="showDescription('Measuring Tool', 'Used before and after mounting the piston to ensure correct positioning.')">❓</button>
+                <div class="tool-description" id="desc-Measuring Tool"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img23.jpg" alt="Plastic Container" class="tool-image">
                 <div>Plastic Container (max height 20 cm)</div>
-                <p class="tool-description">Used to collect and store parts or fluids during the repair process.</p>
+                <button class="info-btn" onclick="showDescription('Plastic Container', 'Used to collect and store parts or fluids during the repair process.')">❓</button>
+                <div class="tool-description" id="desc-Plastic Container"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img24.jpg" alt="Cleaning Paper" class="tool-image">
-                <div>Cleaning Paper/Towels/Mats</div>
-                <p class="tool-description">For cleaning components and surfaces during the repair process.</p>
+                <div>Cleaning Paper and Mats</div>
+                <button class="info-btn" onclick="showDescription('Cleaning Paper', 'For cleaning components and surfaces during the repair process.')">❓</button>
+                <div class="tool-description" id="desc-Cleaning Paper"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img33.jpg" alt="Plastic Bag for Trash" class="tool-image">
-                <div>Plastic Bag for Dirty Towels/Paper or Trash</div>
-                <p class="tool-description">For safely storing used towels, papers, and other waste materials.</p>
+                <div>Plastic Bag for Trash</div>
+                <button class="info-btn" onclick="showDescription('Plastic Bag for Trash', 'For safely storing used towels, papers, and other waste materials.')">❓</button>
+                <div class="tool-description" id="desc-Plastic Bag for Trash"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img34.jpg" alt="Nitril Gloves" class="tool-image">
                 <div>Nitril and/or Rubber Gloves</div>
-                <p class="tool-description">To protect hands from contaminants and to maintain a clean working environment.</p>
+                <button class="info-btn" onclick="showDescription('Nitril Gloves', 'To protect hands from contaminants and to maintain a clean working environment.')">❓</button>
+                <div class="tool-description" id="desc-Nitril Gloves"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img36.jpg" alt="Torque Wrench 1000 NM" class="tool-image">
                 <div>Torque Wrench 1” 1000 NM</div>
-                <p class="tool-description">For tightening critical components to the correct torque specification.</p>
+                <button class="info-btn" onclick="showDescription('Torque Wrench 1000 NM', 'For tightening critical components to the correct torque specification.')">❓</button>
+                <div class="tool-description" id="desc-Torque Wrench 1000 NM"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img37.jpg" alt="46 mm Moment Key" class="tool-image">
                 <div>46 mm Moment Key</div>
-                <p class="tool-description">Used for adjusting the position sensor in specific wind turbine models.</p>
+                <button class="info-btn" onclick="showDescription('46 mm Moment Key', 'Used for adjusting the position sensor in specific wind turbine models.')">❓</button>
+                <div class="tool-description" id="desc-46 mm Moment Key"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img40.jpg" alt="Ratchet Set" class="tool-image">
                 <div>Ratchet Set</div>
-                <p class="tool-description">A set of ratchets used for loosening and tightening bolts with ease.</p>
+                <button class="info-btn" onclick="showDescription('Ratchet Set', 'A set of ratchets used for loosening and tightening bolts with ease.')">❓</button>
+                <div class="tool-description" id="desc-Ratchet Set"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img41.jpg" alt="Allen Key" class="tool-image">
                 <div>Allen Key</div>
-                <p class="tool-description">For driving hexagonal screws and bolts used in the system.</p>
+                <button class="info-btn" onclick="showDescription('Allen Key', 'For driving hexagonal screws and bolts used in the system.')">❓</button>
+                <div class="tool-description" id="desc-Allen Key"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img42.jpg" alt="Hammer" class="tool-image">
                 <div>Hammer (1-2.5 Kg)</div>
-                <p class="tool-description">Used to tap components into place and dislodge stuck parts.</p>
+                <button class="info-btn" onclick="showDescription('Hammer', 'Used to tap components into place and dislodge stuck parts.')">❓</button>
+                <div class="tool-description" id="desc-Hammer"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img43.jpg" alt="Spanner Set" class="tool-image">
                 <div>1 Set of Spanners</div>
-                <p class="tool-description">Various sizes for adjusting and loosening different bolts and nuts.</p>
+                <button class="info-btn" onclick="showDescription('Spanner Set', 'Various sizes for adjusting and loosening different bolts and nuts.')">❓</button>
+                <div class="tool-description" id="desc-Spanner Set"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img44.jpg" alt="Power Tool" class="tool-image">
                 <div>Power Tool (Nice to have)</div>
-                <p class="tool-description">For faster and easier removal of stuck bolts and other tasks.</p>
+                <button class="info-btn" onclick="showDescription('Power Tool', 'For faster and easier removal of stuck bolts and other tasks.')">❓</button>
+                <div class="tool-description" id="desc-Power Tool"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
-         
             <div class="tool-item">
                 <img src="img/tools/v80/img45.jpg" alt="20-liter Jug" class="tool-image">
                 <div>20-liter Jug (empty)</div>
-                <p class="tool-description">Used for collecting oil during cylinder compression.</p>
+                <button class="info-btn" onclick="showDescription('20-liter Jug', 'Used for collecting oil during cylinder compression.')">❓</button>
+                <div class="tool-description" id="desc-20-liter Jug"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img53.jpg" alt="Chisels Flat" class="tool-image">
                 <div>Chisels Flat (2 pcs)</div>
-                <p class="tool-description">Used for loosening the link bearing head and unscrewing the piston rod.</p>
+                <button class="info-btn" onclick="showDescription('Chisels Flat', 'Used for loosening the link bearing head and unscrewing the piston rod.')">❓</button>
+                <div class="tool-description" id="desc-Chisels Flat"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img36.jpg" alt="Hydraulic Oil" class="tool-image">
                 <div>Hydraulic Oil</div>
-                <p class="tool-description">To lubricate the seals and prevent damage during the repair process.</p>
+                <button class="info-btn" onclick="showDescription('Hydraulic Oil', 'To lubricate the seals and prevent damage during the repair process.')">❓</button>
+                <div class="tool-description" id="desc-Hydraulic Oil"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img37.jpg" alt="Grease" class="tool-image">
                 <div>Grease</div>
-                <p class="tool-description">Used to grease threads and other moving parts to reduce friction.</p>
+                <button class="info-btn" onclick="showDescription('Grease', 'Used to grease threads and other moving parts to reduce friction.')">❓</button>
+                <div class="tool-description" id="desc-Grease"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img38.jpg" alt="Hacksaw" class="tool-image">
                 <div>Hacksaw (Nice to have)</div>
-                <p class="tool-description">Used for cutting through tough or jammed components.</p>
+                <button class="info-btn" onclick="showDescription('Hacksaw', 'Used for cutting through tough or jammed components.')">❓</button>
+                <div class="tool-description" id="desc-Hacksaw"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img54.jpg" alt="File" class="tool-image">
                 <div>File (Thread and Flat)</div>
-                <p class="tool-description">Used to smooth and clean threads and flat surfaces.</p>
+                <button class="info-btn" onclick="showDescription('File', 'Used to smooth and clean threads and flat surfaces.')">❓</button>
+                <div class="tool-description" id="desc-File"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
             <div class="tool-item">
                 <img src="img/tools/v80/img57.jpg" alt="Torque Multiplying Ratchet" class="tool-image">
                 <div>Torque Multiplying Ratchet</div>
-                <p class="tool-description">A highly recommended tool for applying high torque in limited spaces.</p>
+                <button class="info-btn" onclick="showDescription('Torque Multiplying Ratchet', 'A highly recommended tool for applying high torque in limited spaces.')">❓</button>
+                <div class="tool-description" id="desc-Torque Multiplying Ratchet"></div>
                 <input type="checkbox" class="tool-checkbox">
             </div>
         </div>
     </div>
-
-      <footer>
+      <div id="descriptionPopup" class="popup-modal">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">✖️</button>
+            <h2 id="popupTitle"></h2>
+            <p id="popupDescription"></p>
+        </div>
+    </div>
+    <footer>
         <nav class="footer-nav">
             <button class="footer-btn" id="steps-btn">
                 <i class="icon">🛠️</i> Steps
@@ -186,8 +213,8 @@
             </button>
         </nav>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
