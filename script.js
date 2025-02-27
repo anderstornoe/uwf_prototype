@@ -23,6 +23,10 @@ $(document).ready(function() {
         window.location.href = "index.html"; // Navigate to steps page
     });
 
+      $("#docs-btn").click(function() {
+        window.location.href = "docs.html"; // Navigate to steps page
+    });
+
     $("#ai-help-btn").click(function() {
         alert("navigating to chatgpt..");
         //window.location.href = "https://chatgpt.com/g/g-67b703fe6d0c8191aa32f4bfc3cd9c90-ai-help-for-v80-90-18-20mw-repair-kit-5271802h"; // Navigate to steps page

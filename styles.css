@@ -213,7 +213,7 @@ footer {
 }
 
 /* Tools Container Styling */
-.tools-container {
+.tools-container, .docs-container {
     background-color: #fff;
     padding: 20px 20px 120px 20px;
     margin: 4px;  /* Similar to the steps container margin */
@@ -490,5 +490,20 @@ footer {
 
 .feedback-container button:hover {
     background-color: #007BFF;
+}
+
+.image-container {
+    margin-bottom: 30px;
+    width: 100%; /* Ensure container takes up full width */
+}
+
+.video-image {
+    width: 100%;  /* Make image take up the full width of its container */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
     
