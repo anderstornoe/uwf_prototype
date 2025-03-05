@@ -28,16 +28,17 @@ $(document).ready(function() {
     });
 
     $("#ai-help-btn").click(function() {
-        alert("navigating to chatgpt..");
+        window.location.href = "ai.html";
+        ///alert("navigating to chatgpt..");
         //window.location.href = "https://chatgpt.com/g/g-67b703fe6d0c8191aa32f4bfc3cd9c90-ai-help-for-v80-90-18-20mw-repair-kit-5271802h"; // Navigate to steps page
-    window.open('https://chatgpt.com/g/g-67b703fe6d0c8191aa32f4bfc3cd9c90-ai-help-for-v80-90-18-20mw-repair-kit-5271802h', '_blank');
+    ///window.open('https://chatgpt.com/g/g-67b703fe6d0c8191aa32f4bfc3cd9c90-ai-help-for-v80-90-18-20mw-repair-kit-5271802h', '_blank');
     });
 
     
 
     // Click event for online help button
     $("#online-help-btn").click(function() {
-        alert("Online Help is currently unavailable!"); // Placeholder for online help
+        window.location.href = "support.html"; // Navigate to steps page//alert("Online Help is currently unavailable!"); // Placeholder for online help
     });
 
 

@@ -334,22 +334,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.info-btn {
-    background-color: #9E1B32;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-}
-
-.info-btn:hover {
-    background-color: #007BFF;
-}
 
 .tool-description {
     margin-top: 15px;
@@ -420,7 +404,9 @@ footer {
 }
 
 .info-btn:hover {
-    background-color: #007BFF;
+    background-color: rgba(158,27,50,.3);
+    color: white;
+
 }
 
 /* Feedback Page Styling */
