@@ -10,44 +10,74 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Styling */
-header {
-    background-color: #9E1B32; /* Red color to match header */
-    color: white;
-    padding: 15px 20px;
+/* Styling for the header */
+.header-content {
+    width: 100%;
+    padding: 20px;
+    background-color:#9e1b32;
+}
+
+/* Centered title and right-aligned logos */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Center the title */
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Logos container styled to align to the right */
+.logos-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/* Style for the logos */
+.logo, .LJM_logo {
+    max-width: 150px;  /* Adjust logo size */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Dropdowns styling */
+.dropdown-container {
+    margin-top: 20px;
     text-align: center;
 }
 
-/* Header Container */
-.header-container {
-    display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Align to the left */
-    padding: 0px;
-    background-color: #9E1B32; /* Optional: change background color */
-    color: white;
-    margin-bottom: 40px;
+.dropdowns select {
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 1rem;
 }
 
-.logo {
-    width: 24%; /* Adjust the size of the logo */
-    height: auto;
-    margin-left: 15px; /* Space between logo and title */
-    position: absolute;
-    right: 5px;
-    top: 7px;
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .logo, .LJM_logo {
+        max-width: 120px;
+    }
+    
+    .dropdowns select {
+        width: 80%; /* Adjust select box width on small screens */
+    }
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 36px;
+    color: white;
     font-weight: bold;
     margin-left: 0; /* Remove default margin */
 }
 
-.logo_top{
-    height: 100px;
-    width: 100px;
-}
 
 /* Dropdown Container Styling */
 .dropdown-container {
@@ -343,8 +373,7 @@ footer {
     display: none; /* Initially hidden */
     font-size: 16px;
     color: #333;
-}
-/* Popup Modal Styling */
+}/* Popup Modal Styling */
 .popup-modal {
     display: none; /* Initially hidden */
     position: fixed;
@@ -366,19 +395,34 @@ footer {
     max-width: 600px;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Title */
 .popup-content h2 {
     font-size: 24px;
     color: #333;
+    margin-bottom: 15px;
 }
 
+/* Description */
 .popup-content p {
-    font-size: 18px;
+    font-size: 16px;
     color: #555;
     margin-top: 15px;
 }
 
+/* Image Styling */
+.popup-content img {
+    margin-top: 15px;
+    max-width: 100%; /* Ensures the image takes up the full width of the modal */
+    height: auto;
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+}
+
+/* Close Button Styling */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -388,6 +432,9 @@ footer {
     border: none;
     cursor: pointer;
 }
+
+
+
 
 /* Style for Info Button */
 .info-btn {
@@ -433,27 +480,52 @@ footer {
 }
 
 .feedback-container label {
-    font-size: 16px;
+    font-size: 18px;
     color: #555;
     margin-bottom: 5px;
     display: block;
 }
 
 .feedback-container input[type="range"] {
-    width: 100%;
-    height: 15px; /* Make the slider thicker */
+        width: 100%;
+    height: 25px;
     -webkit-appearance: none;
     background-color: #ddd;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.feedback-container input[type="range"]::-webkit-slider-thumb {
+/* Style for the thumb (blue circle) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;              /* Thumb width */
+    height: 20px;             /* Thumb height */
+    background: #9E1B32;      /* Green thumb color */
+    border-radius: 50%;       /* Circle shape */
+    cursor: pointer;         /* Cursor change to pointer */
+    border: 2px solid #333;   /* Optional: border around the thumb */
+}
+
+/* Style for Firefox */
+input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
     background: #9E1B32;
     border-radius: 50%;
     cursor: pointer;
+    border: 2px solid #333;
+}
+
+/* Style for Internet Explorer */
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #9E1B32;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
 }
 
 .feedback-container textarea {
@@ -491,5 +563,27 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* Style for the Live AI Help Button */
+.live-ai-help-btn {
+    background-color: #9E1B32;  /* Red color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.live-ai-help-btn:hover {
+    background-color: #FF5733;  /* Lighter red for hover effect */
+}
+
+.live-ai-help-btn:focus {
+    outline: none;
 }
     

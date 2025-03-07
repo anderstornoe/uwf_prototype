@@ -65,7 +65,7 @@ switch (stepId) {
         stepTitle = "Step 2: Gland Removal";
         stepDescription = `
             <ul>
-                <li>Mount the nylon plug according to the type of gland.</li>
+                <li>⚠️ Mount the nylon plug according to the type of gland. ⚠️</li>
                 <li>Detach using the special tools.</li>
             </ul>
         `;
@@ -84,7 +84,7 @@ switch (stepId) {
         stepDescription = `
             <ul>
                 <li>Grease/oil all threads and mating surfaces.</li>
-                <li>Mount the Uptower Repair Kit into the tube, ensuring not to damage the seals when passing through the internal threads.</li>
+                <li>⚠️ Mount the Uptower Repair Kit into the tube, ensuring not to damage the seals when passing through the internal threads.⚠️</li>
                 <li>Tighten with 950Nm.</li>
             </ul>
         `;
@@ -109,11 +109,16 @@ switch (stepId) {
 });
 
 $(document).ready(function() {
-    // Function to display the description in the popup
-    window.showDescription = function(toolName, description) {
+    // Function to display the description and image in the popup
+    window.showDescription = function(toolName, description, imgSrc) {
         // Set the content for the popup
         document.getElementById('popupTitle').innerText = toolName;
         document.getElementById('popupDescription').innerText = description;
+
+        // Set the image source for the popup
+        const popupImage = document.getElementById('popupImage');
+        popupImage.src = imgSrc;  // Set the image source dynamically
+        popupImage.style.display = "block";  // Make sure the image is visible
 
         // Display the popup modal
         document.getElementById('descriptionPopup').style.display = "flex";

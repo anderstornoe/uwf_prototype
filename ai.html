@@ -8,40 +8,50 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <div class="header-container">
-            <!-- Logo Image -->
-            
-            <!-- Title -->
+<header>
+    <div class="header-content">
+        <div class="header-container">
             <h1>Uptower Repair</h1>
-        <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="Logo" class="logo">
-        </div>            <!-- Dropdowns for Turbine and Repair Kit Selection -->
-            <div class="dropdown-container">
-                Select turbine and repair kit:
-                <select id="turbine-select">
-                    <option value="v80_90">V80/90 1.8-2.0MW</option>
-                    <option value="v160">V160 1.8-2.0MW</option>
-                </select>
-                <select id="repair-kit-select">
-                    <option value="5271802H">5271802H</option>
-                </select>
+            <!-- Logos Container -->
+            <div class="logos-container">
+                <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="United Wind Force Logo" class="logo">
+                <img src="img/LJM logo.png" alt="LJM Logo" class="LJM_logo">
             </div>
         </div>
-    </header>
+      
+    </div>
+      <div class="dropdown-container">
+            Select turbine and repair kit:
+            <select id="turbine-select">
+                <option value="v80_90">V80/90 1.8-2.0MW</option>
+                <option value="v160">V160 1.8-2.0MW</option>
+            </select>
+            <select id="repair-kit-select">
+                <option value="5271802H">5271802H</option>
+            </select>
+        </div>
+</header>
 
 <div class="docs-container">
         <div class="content-section">
             <h2>AI Chat</h2>
-            <br/>
+            <div class="ai-help-content">
+    <p>Get assistance with the AI-chatbot. </p>
+    <br/>
+
+    <!-- Button to go to Live AI Help -->
+    
+</div>
             
             <!-- Large Image Resembling Video Player -->
             <div class="image-container">
     <img src="img/aimockup.jpg" alt="Video Player" class="video-image" />
 </div>
             
-            <br/>
+
             <!-- PDF Icon and Description -->
+
+            <button class="live-ai-help-btn" onclick="window.location.href='https://chatgpt.com/g/g-67b703fe6d0c8191aa32f4bfc3cd9c90-ai-help-for-v80-90-18-20mw-repair-kit-5271802h'">Go to Live AI Help</button>
           
         </div>
     </div>

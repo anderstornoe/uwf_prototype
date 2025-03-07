@@ -8,38 +8,42 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <div class="header-container">
-            <!-- Logo Image -->
-            
-            <!-- Title -->
+<header>
+    <div class="header-content">
+        <div class="header-container">
             <h1>Uptower Repair</h1>
-        <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="Logo" class="logo">
-        </div>            <!-- Dropdowns for Turbine and Repair Kit Selection -->
-            <div class="dropdown-container">
-                Select turbine and repair kit:
-                <select id="turbine-select">
-                    <option value="v80_90">V80/90 1.8-2.0MW</option>
-                    <option value="v160">V160 1.8-2.0MW</option>
-                </select>
-                <select id="repair-kit-select">
-                    <option value="5271802H">5271802H</option>
-                </select>
+            <!-- Logos Container -->
+            <div class="logos-container">
+                <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="United Wind Force Logo" class="logo">
+                <img src="img/LJM logo.png" alt="LJM Logo" class="LJM_logo">
             </div>
         </div>
-    </header>
+      
+    </div>
+      <div class="dropdown-container">
+            Select turbine and repair kit:
+            <select id="turbine-select">
+                <option value="v80_90">V80/90 1.8-2.0MW</option>
+                <option value="v160">V160 1.8-2.0MW</option>
+            </select>
+            <select id="repair-kit-select">
+                <option value="5271802H">5271802H</option>
+            </select>
+        </div>
+</header>
 
 <div class="docs-container">
         <div class="content-section">
             <h2>Repair Kit Documentation</h2>
+            <p>Read the documentation or watch the video of the repair process</p>
+            <br/>
             
             <!-- Large Image Resembling Video Player -->
             <div class="image-container">
     <img src="img/video_placeholder.jpg" alt="Video Player" class="video-image" />
 </div>
             
-            <br/>
+            
             <!-- PDF Icon and Description -->
             <div class="file-info">
                 <div class="pdf-icon">
@@ -47,7 +51,9 @@
                 </div>
                 <div class="file-description">
                     <h3>Repair Kit Instruction Manual</h3>
+                    <br/>
                     <p>This document provides a detailed description of how to use the repair kit. <br/>It includes safety instructions, installation procedures, and troubleshooting tips.</p>
+                    <br/>
                     <a href="assets/9515121, 9515135 Cylinder repair guide-07.pdf" target="_blank" class="download-link">Download PDF</a>
                 </div>
             </div>
@@ -66,7 +72,7 @@
                 <p class="icon">🧑‍💼</p> Online Help
             </button>
             <button class="footer-btn" id="ai-help-btn">
-                <p class="icon">ost</p> AI Help
+                <p class="icon">🤖</p> AI Chat
             </button>
             <button class="footer-btn"id="docs-btn">
                 <p class="icon">📄</p> Docs

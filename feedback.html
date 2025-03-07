@@ -8,46 +8,48 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <div class="header-container">
-            <!-- Logo Image -->
-            
-            <!-- Title -->
+<header>
+    <div class="header-content">
+        <div class="header-container">
             <h1>Uptower Repair</h1>
-        <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="Logo" class="logo">
-        </div>            <!-- Dropdowns for Turbine and Repair Kit Selection -->
-            <div class="dropdown-container">
-                Select turbine and repair kit:
-                <select id="turbine-select">
-                    <option value="v80_90">V80/90 1.8-2.0MW</option>
-                    <option value="v160">V160 1.8-2.0MW</option>
-                </select>
-                <select id="repair-kit-select">
-                    <option value="5271802H">5271802H</option>
-                </select>
+            <!-- Logos Container -->
+            <div class="logos-container">
+                <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="United Wind Force Logo" class="logo">
+                <img src="img/LJM logo.png" alt="LJM Logo" class="LJM_logo">
             </div>
         </div>
-    </header>
+      
+    </div>
+      <div class="dropdown-container">
+            Select turbine and repair kit:
+            <select id="turbine-select">
+                <option value="v80_90">V80/90 1.8-2.0MW</option>
+                <option value="v160">V160 1.8-2.0MW</option>
+            </select>
+            <select id="repair-kit-select">
+                <option value="5271802H">5271802H</option>
+            </select>
+        </div>
+</header>
 
 <div class="feedback-container">
         <h2>Your Feedback</h2>
-        <p>We value your feedback! Please rate the following:</p>
+        <p>We value your feedback! Please rate the following and add comments, that will help us make our products better</p>
 
         <form id="feedback-form">
-            <label for="quality">Quality of your repair:</label>
-            <input type="range" id="quality" name="quality" min="1" max="5" value="3">
+            <label for="quality">Rate your satisfaction with the app's helpfulness: </label>
+            <input type="range" id="quality" name="quality" min="0" max="10" value="5">
 
-            <label for="efficiency">Efficiency and time spent on repair:</label>
-            <input type="range" id="efficiency" name="efficiency" min="1" max="5" value="3">
+            <label for="efficiency">Rate the effectiveness of the </label>
+<input type="range" id="quality" name="quality" min="0" max="10" value="5">
 
-            <label for="tool-kit">Tool kit usefulness:</label>
-            <input type="range" id="tool-kit" name="tool-kit" min="1" max="5" value="3">
+            <label for="tool-kit">Rate the tool kit:</label>
+            <input type="range" id="quality" name="quality" min="0" max="10" value="5">
 
-            <label for="overall-app">Overall app helpfulness:</label>
-            <input type="range" id="overall-app" name="overall-app" min="1" max="5" value="3">
+            <label for="overall-app">Rate the app's ease of use:</label>
+            <input type="range" id="quality" name="quality" min="0" max="10" value="5">
 
-            <label for="comments">Additional Comments:</label>
+            <label for="comments">Comments, suggestions improvements? Write them here: </label>
             <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
 
             <button type="submit">Submit Feedback</button>
@@ -65,8 +67,8 @@
             <button class="footer-btn" id="online-help-btn">
                 <p class="icon">🧑‍💼</p> Online Help
             </button>
-            <button class="footer-btn" id="ai-help-btn">
-                <p class="icon">🤖</p> AI Help
+          <button class="footer-btn" id="ai-help-btn">
+                <p class="icon">🤖</p> AI Chat
             </button>
             <button class="footer-btn"id="docs-btn">
                 <p class="icon">📄</p> Docs

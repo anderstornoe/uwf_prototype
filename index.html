@@ -7,24 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-container">
+<header>
+    <div class="header-content">
+        <div class="header-container">
             <h1>Uptower Repair</h1>
-            <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="Logo" class="logo">
-            </div>
-            <div class="dropdown-container">
-                Select turbine and repair kit:
-                <select id="turbine-select">
-                    <option value="v80_90">V80/90 1.8-2.0MW</option>
-                    <option value="v160">V160 1.8-2.0MW</option>
-                </select>
-                <select id="repair-kit-select">
-                    <option value="5271802H">5271802H</option>
-                </select>
+            <!-- Logos Container -->
+            <div class="logos-container">
+                <img src="img/United-Wind-Force-logo-Primær-NEG-uden-Payoff.png" alt="United Wind Force Logo" class="logo">
+                <img src="img/LJM logo.png" alt="LJM Logo" class="LJM_logo">
             </div>
         </div>
-    </header>
+      
+    </div>
+      <div class="dropdown-container">
+            Select turbine and repair kit:
+            <select id="turbine-select">
+                <option value="v80_90">V80/90 1.8-2.0MW</option>
+                <option value="v160">V160 1.8-2.0MW</option>
+            </select>
+            <select id="repair-kit-select">
+                <option value="5271802H">5271802H</option>
+            </select>
+        </div>
+</header>
 
     <div class="steps-container" id="steps-container">
         <div class="steps-navigation">
@@ -54,8 +59,8 @@
             <button class="footer-btn" id="online-help-btn">
                 <p class="icon">🧑‍💼</p> Online Help
             </button>
-            <button class="footer-btn" id="ai-help-btn">
-                <p class="icon">🤖</p> AI Help
+         <button class="footer-btn" id="ai-help-btn">
+                <p class="icon">🤖</p> AI Chat
             </button>
             <button class="footer-btn"id="docs-btn">
                 <p class="icon">📄</p> Docs
