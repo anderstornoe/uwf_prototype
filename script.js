@@ -49,7 +49,7 @@ $(document).ready(function() {
 
         var stepTitle = "Step " + stepId;
         var stepDescription = "Placeholder text for step " + stepId + " content.";
-        var imageSrc = "img/img_" + stepId + ".jpg";
+        var imageSrc = "img/img_" + stepId + "e.png";
 switch (stepId) {
     case 1:
         stepTitle = "Step 1: Preparation";

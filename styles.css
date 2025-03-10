@@ -52,6 +52,7 @@ body {
 .dropdown-container {
     margin-top: 20px;
     text-align: center;
+    background-color: #9e1b33;
 }
 
 .dropdowns select {
@@ -63,7 +64,7 @@ body {
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .logo, .LJM_logo {
-        max-width: 120px;
+        max-width: 40%;
     }
     
     .dropdowns select {
@@ -72,7 +73,7 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 32px;
     color: white;
     font-weight: bold;
     margin-left: 0; /* Remove default margin */
@@ -81,8 +82,10 @@ h1 {
 
 /* Dropdown Container Styling */
 .dropdown-container {
-    margin-top: 10px;
-    margin-left: 4px;
+    background-color: #9e1b33;
+    padding: 4px;
+    margin-top: 0px;
+    color: white;
 }
 
 label {
@@ -151,7 +154,7 @@ select {
 /* Step Image Styling */
 .step-image {
     width: 100%;
-    height: 300px; /* Set fixed height for the image */
+    height: auto; /* Set fixed height for the image */
     object-fit: cover; /* Ensure the image maintains aspect ratio */
     border-radius: 8px;
     border: 1px solid #ccc;
