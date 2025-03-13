@@ -18,34 +18,56 @@ body {
 }
 
 /* Centered title and right-aligned logos */
+.header-title {
+    text-align: center;  /* Centers the title text */
+    flex-grow: 1;         /* Ensures the title takes up available space */
+    font-size: 2.5rem;      /* Adjust the font size as needed */
+    font-weight: bold;    /* Make the title bold */
+    margin: 0;            /* Remove any default margins */
+}
+
+/* Adjust header-container if needed */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 /* Center the title */
 .header-title {
     flex-grow: 1;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 /* Logos container styled to align to the right */
 .logos-container {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: flex-end;
-    flex-grow: 1;
+     display: flex;
+     flex-direction: column;   /* Stack logos vertically */
+     gap: 20px;                /* Adds space between logos */
+     align-items: flex-end;    /* Align logos to the right */
+     position: absolute;
+     right: 10px;
+     top: 20px;
+     right: 10px;
+     padding: 0px 10px 10px 10px;
 }
+
+
+
 
 /* Style for the logos */
 .logo, .LJM_logo {
-    max-width: 150px;  /* Adjust logo size */
+    max-width: 130px;  /* Adjust logo size */
     height: auto;
     object-fit: contain;
+    margin-top: -10px;
+}
+
+.LJM_logo{
+    top:40px;
 }
 
 /* Dropdowns styling */
@@ -64,7 +86,7 @@ body {
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .logo, .LJM_logo {
-        max-width: 40%;
+        max-width: 15%;
     }
     
     .dropdowns select {
