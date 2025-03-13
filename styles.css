@@ -11,22 +11,17 @@ body {
 }
 
 /* Styling for the header */
+/* Header styling */
 .header-content {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    background-color:#9e1b32;
+    background-color: #9e1b32; /* Red header background */
 }
 
-/* Centered title and right-aligned logos */
-.header-title {
-    text-align: center;  /* Centers the title text */
-    flex-grow: 1;         /* Ensures the title takes up available space */
-    font-size: 2.5rem;      /* Adjust the font size as needed */
-    font-weight: bold;    /* Make the title bold */
-    margin: 0;            /* Remove any default margins */
-}
-
-/* Adjust header-container if needed */
+/* Container for the title and logos */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -34,12 +29,14 @@ body {
     width: 100%;
 }
 
-/* Center the title */
+/* Title styling (centering the title) */
 .header-title {
-    flex-grow: 1;
-    text-align: center;
     font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
     font-weight: bold;
+    margin: 0;
 }
 
 /* Logos container styled to align to the right */
