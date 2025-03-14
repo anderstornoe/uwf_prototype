@@ -31,19 +31,19 @@ body {
 
 /* Title styling (centering the title) */
 .header-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: white;
     text-align: center;
     flex-grow: 1;
     font-weight: bold;
-    margin: 0;
+    margin: 0px 0px 0px -40px;
 }
 
 /* Logos container styled to align to the right */
 .logos-container {
      display: flex;
      flex-direction: column;   /* Stack logos vertically */
-     gap: 20px;                /* Adds space between logos */
+     gap: 10px;                /* Adds space between logos */
      align-items: flex-end;    /* Align logos to the right */
      position: absolute;
      right: 10px;
@@ -56,8 +56,8 @@ body {
 
 
 /* Style for the logos */
-.logo, .LJM_logo {
-    max-width: 130px;  /* Adjust logo size */
+.logo {
+    max-width: 150px;  /* Adjust logo size */
     height: auto;
     object-fit: contain;
     margin-top: -10px;
@@ -65,6 +65,10 @@ body {
 
 .LJM_logo{
     top:40px;
+    max-width: 130px;  /* Adjust logo size */
+    height: auto;
+    object-fit: contain;
+    margin-top: -10px;
 }
 
 /* Dropdowns styling */
@@ -82,8 +86,14 @@ body {
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    .logo, .LJM_logo {
-        max-width: 15%;
+    .logo {
+        max-width: 20%;
+        margin-top: -15px;
+        margin-right: -10px;
+    }
+
+    .LJM_logo {
+        max-width: 17%;
     }
     
     .dropdowns select {
